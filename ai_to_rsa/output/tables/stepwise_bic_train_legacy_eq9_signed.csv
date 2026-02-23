@@ -1,0 +1,4 @@
+split,disc_variant,model,n_obs,n_params,llf,bic
+train,legacy_eq9_signed,disc,46214,2,-15418.477697837652,30858.437471798243
+train,legacy_eq9_signed,disc+clarity,46214,3,-14738.20613229039,29508.635378765186
+train,legacy_eq9_signed,disc+clarity+len_chars,46214,4,-14727.821056303139,29498.60626485215

@@ -1,0 +1,4 @@
+split,disc_variant,model,n_obs,n_params,llf,bic
+train,gap_norm,disc,46214,2,-15791.246361236157,31603.974798595253
+train,gap_norm,disc+clarity,46214,3,-14643.435243663745,29319.093601511897
+train,gap_norm,disc+clarity+len_chars,46214,4,-14638.684984942158,29320.33412213019

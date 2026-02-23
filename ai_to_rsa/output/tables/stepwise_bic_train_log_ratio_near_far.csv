@@ -1,0 +1,4 @@
+split,disc_variant,model,n_obs,n_params,llf,bic
+train,log_ratio_near_far,disc,46214,2,-15790.845485654241,31603.17304743142
+train,log_ratio_near_far,disc+clarity,46214,3,-14624.705168050536,29281.633450285477
+train,log_ratio_near_far,disc+clarity+len_chars,46214,4,-14620.858393324159,29284.68093889419

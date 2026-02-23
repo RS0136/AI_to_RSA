@@ -1,0 +1,9 @@
+subset,groups,n_groups,ll_test
+(none),,0,-3865.716486797587
+decoder,decoder,1,-3835.2814270326735
+geometry,geometry,1,-3580.779945032292
+offsets,offsets,1,-3662.1894074543334
+decoder+geometry,"geometry,decoder",2,-3579.98378271237
+decoder+offsets,"offsets,decoder",2,-3657.3753677694067
+geometry+offsets,"offsets,geometry",2,-3580.141749916749
+decoder+geometry+offsets,"offsets,geometry,decoder",3,-3579.3434177105646

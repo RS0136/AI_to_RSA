@@ -1,0 +1,4 @@
+split,disc_variant,model,n_obs,n_params,llf,bic
+train,farthest_distractor,disc,46214,2,-15075.934475152597,30173.351026428132
+train,farthest_distractor,disc+clarity,46214,3,-14598.815238459534,29229.853591103474
+train,farthest_distractor,disc+clarity+len_chars,46214,4,-14596.080326056086,29235.124804358045
