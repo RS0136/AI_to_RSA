@@ -1,0 +1,19 @@
+name,description
+original,"Main (nearest competitor) difficulty proxy: -min(|t1|,|t2|)."
+legacy_eq9_signed,Legacy (prior manuscript 'original'): D1D2Diff if available else targetD1Diff-targetD2Diff (signed).
+tdiff_raw,Signed target difference: targetD1Diff-targetD2Diff.
+tdiff_abs,Absolute-distance target difference: |targetD1Diff|-|targetD2Diff|.
+d12_only,D1D2Diff only (drops rows where missing).
+d12_abs,Absolute D1D2Diff only (drops rows where missing).
+mean_competitor,Difficulty proxy from mean competitor distance: -0.5(|t1|+|t2|).
+inv_mean_competitor,Difficulty proxy: 1/(0.5(|t1|+|t2|)+eps).
+nearest_competitor_signed,"Sign(t1-t2) * min(|t1|,|t2|) (signed nearest-competitor magnitude)."
+inv_nearest_competitor,"Difficulty proxy: 1/(min(|t1|,|t2|)+eps)."
+neglog_nearest_competitor,"Difficulty proxy: -log(min(|t1|,|t2|)+eps)."
+farthest_distractor,"Ease proxy from farthest distractor: max(|t1|,|t2|)."
+gap_near_far,"Asymmetry: max(|t1|,|t2|)-min(|t1|,|t2|)."
+gap_norm,Normalized asymmetry: (max-min)/(mean+eps).
+ratio_near_far,"Relative closeness: min/(max+eps) in [0,1]."
+log_ratio_near_far,Log ratio: log((min+eps)/(max+eps)).
+softmin_dist,"Smooth-min difficulty proxy: -softmin(|t1|,|t2|)."
+d12_over_nearest,"Relative distractor separation: |d12|/(min(|t1|,|t2|)+eps)."
