@@ -1,0 +1,13 @@
+{
+  "seed": 0,
+  "test_size": 0.2,
+  "cluster_spec": "worker+game+listener",
+  "wald_bootstrap": "none",
+  "wald_n_boot": 999,
+  "wald_bootstrap_weight": "rademacher",
+  "shapley_bootstrap_method": "pigeonhole",
+  "n_train": 46214,
+  "n_test": 11490,
+  "n_train_workers": 620,
+  "n_test_workers": 156
+}
