@@ -18,7 +18,7 @@ The project has two main parts:
 ## Repository layout
 
 ```
-AI_to_RSA/
+AI_to_RSA-main/
   README.md
   requirements.txt                # Minimal pinned requirements used by the pipeline
   LICENSE                         # MIT license
