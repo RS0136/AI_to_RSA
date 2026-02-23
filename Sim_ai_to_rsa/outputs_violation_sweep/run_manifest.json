@@ -1,0 +1,24 @@
+{
+  "timestamp_utc": "2026-02-22T09:07:52.608789+00:00",
+  "script": "sim.py",
+  "mode": "violation_sweep",
+  "args": {
+    "outdir": "Sim_ai_to_rsa/outputs_violation_sweep",
+    "mode": "violation_sweep",
+    "seed": 0,
+    "n_trials": 20000,
+    "n_workers": 600,
+    "n_candidates": 15,
+    "test_frac_workers": 0.2,
+    "n_rep": 20
+  },
+  "environment": {
+    "python_version": "3.12.0 (tags/v3.12.0:0fb18b0, Oct  2 2023, 13:03:39) [MSC v.1935 64 bit (AMD64)]",
+    "platform": {
+      "system": "Windows",
+      "release": "11",
+      "version": "10.0.26200",
+      "machine": "AMD64"
+    }
+  }
+}

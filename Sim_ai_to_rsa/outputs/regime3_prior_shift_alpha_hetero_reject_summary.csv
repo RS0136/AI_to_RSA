@@ -1,0 +1,13 @@
+split,block,reject_rate,mean_stat,median_p,n,regime
+test,A2_outcome_clarity,0.25,3.550576430440747,0.2626668770233509,20,regime3_prior_shift_alpha_hetero
+test,A2_outcome_disc,0.15,4.00576633096332,0.20731061105167364,20,regime3_prior_shift_alpha_hetero
+test,A2_outcome_full,1.0,41.6588738842802,3.15712125886769e-08,20,regime3_prior_shift_alpha_hetero
+test,A2_outcome_len,0.85,12.792155700822722,0.003914138659869892,20,regime3_prior_shift_alpha_hetero
+test,A5_outcome_base,0.85,11.698851836642314,0.004112707259325499,20,regime3_prior_shift_alpha_hetero
+test,A5_outcome|A2_outcome_full,0.0,2.2053656535051873,0.3845934292160436,20,regime3_prior_shift_alpha_hetero
+train,A2_outcome_clarity,0.85,14.454190785227814,0.0005657292761848676,20,regime3_prior_shift_alpha_hetero
+train,A2_outcome_disc,0.9,12.905976958655728,0.0036182768171255097,20,regime3_prior_shift_alpha_hetero
+train,A2_outcome_full,1.0,173.96138032837334,0.0,20,regime3_prior_shift_alpha_hetero
+train,A2_outcome_len,1.0,48.23565452546303,1.8739843010706636e-11,20,regime3_prior_shift_alpha_hetero
+train,A5_outcome_base,1.0,41.045867293263676,9.036497661263354e-10,20,regime3_prior_shift_alpha_hetero
+train,A5_outcome|A2_outcome_full,0.85,13.04071567038442,0.0014630647608473435,20,regime3_prior_shift_alpha_hetero

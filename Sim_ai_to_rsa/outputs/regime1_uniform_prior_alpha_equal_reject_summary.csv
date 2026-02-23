@@ -1,0 +1,13 @@
+split,block,reject_rate,mean_stat,median_p,n,regime
+test,A2_outcome_clarity,0.25,3.811584354513375,0.2764427786036306,20,regime1_uniform_prior_alpha_equal
+test,A2_outcome_disc,0.15,3.3026330236183,0.3012713535097335,20,regime1_uniform_prior_alpha_equal
+test,A2_outcome_full,1.0,68.93342481406857,2.8352320491364935e-12,20,regime1_uniform_prior_alpha_equal
+test,A2_outcome_len,1.0,28.755419770281026,4.605131087298542e-06,20,regime1_uniform_prior_alpha_equal
+test,A5_outcome_base,0.95,13.663003704117154,0.0012773376422958171,20,regime1_uniform_prior_alpha_equal
+test,A5_outcome|A2_outcome_full,0.8,8.451421682262794,0.021306815965987158,20,regime1_uniform_prior_alpha_equal
+train,A2_outcome_clarity,0.9,15.572883166050072,0.0007432412755273288,20,regime1_uniform_prior_alpha_equal
+train,A2_outcome_disc,0.85,12.205578901802552,0.00471424293024858,20,regime1_uniform_prior_alpha_equal
+train,A2_outcome_full,1.0,259.70643781045527,0.0,20,regime1_uniform_prior_alpha_equal
+train,A2_outcome_len,1.0,101.4685721545415,0.0,20,regime1_uniform_prior_alpha_equal
+train,A5_outcome_base,1.0,48.10106726348233,5.131678415537522e-11,20,regime1_uniform_prior_alpha_equal
+train,A5_outcome|A2_outcome_full,1.0,36.96333457468329,1.9593941802398263e-08,20,regime1_uniform_prior_alpha_equal

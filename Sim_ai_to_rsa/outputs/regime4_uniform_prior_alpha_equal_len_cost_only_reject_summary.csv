@@ -1,0 +1,13 @@
+split,block,reject_rate,mean_stat,median_p,n,regime
+test,A2_outcome_clarity,0.05,1.7545224119905705,0.6062556668205634,20,regime4_uniform_prior_alpha_equal_len_cost_only
+test,A2_outcome_disc,0.1,1.869370648166095,0.6630913399074825,20,regime4_uniform_prior_alpha_equal_len_cost_only
+test,A2_outcome_full,0.0,7.478530193938977,0.22277743694172986,20,regime4_uniform_prior_alpha_equal_len_cost_only
+test,A2_outcome_len,0.05,1.8310631174521,0.43477279088398396,20,regime4_uniform_prior_alpha_equal_len_cost_only
+test,A5_outcome_base,0.05,1.8443277730734835,0.5333712779563158,20,regime4_uniform_prior_alpha_equal_len_cost_only
+test,A5_outcome|A2_outcome_full,0.05,1.9425958106370764,0.43259680539042583,20,regime4_uniform_prior_alpha_equal_len_cost_only
+train,A2_outcome_clarity,0.4,5.6878538013059385,0.13532286399928256,20,regime4_uniform_prior_alpha_equal_len_cost_only
+train,A2_outcome_disc,0.25,5.28384344661651,0.14653407063407087,20,regime4_uniform_prior_alpha_equal_len_cost_only
+train,A2_outcome_full,0.7,15.790783819370873,0.010062106318992625,20,regime4_uniform_prior_alpha_equal_len_cost_only
+train,A2_outcome_len,0.05,1.9413635747066469,0.46664549598694816,20,regime4_uniform_prior_alpha_equal_len_cost_only
+train,A5_outcome_base,0.2,3.839627036904006,0.23660309040571015,20,regime4_uniform_prior_alpha_equal_len_cost_only
+train,A5_outcome|A2_outcome_full,0.05,2.5324040109600925,0.37323480764513434,20,regime4_uniform_prior_alpha_equal_len_cost_only

@@ -1,0 +1,399 @@
+{
+  "timestamp_utc": "2026-02-22T09:05:42.158905+00:00",
+  "script": "sim.py",
+  "args": {
+    "outdir": "Sim_ai_to_rsa/outputs",
+    "mode": "paper_regimes",
+    "seed": 0,
+    "n_trials": 20000,
+    "n_workers": 600,
+    "n_candidates": 15,
+    "test_frac_workers": 0.2,
+    "n_rep": 20
+  },
+  "environment": {
+    "python_version": "3.12.0 (tags/v3.12.0:0fb18b0, Oct  2 2023, 13:03:39) [MSC v.1935 64 bit (AMD64)]",
+    "platform": {
+      "system": "Windows",
+      "release": "11",
+      "version": "10.0.26200",
+      "machine": "AMD64"
+    }
+  },
+  "regimes": [
+    {
+      "name": "regime1_uniform_prior_alpha_equal",
+      "config": {
+        "seed": 0,
+        "n_trials": 20000,
+        "n_workers": 600,
+        "test_frac_workers": 0.2,
+        "n_candidates": 15,
+        "cond_probs": {
+          "close": 0.36,
+          "far": 0.31,
+          "split": 0.33
+        },
+        "close_mu": 0.12,
+        "close_sd": 0.04,
+        "far_mu": 0.35,
+        "far_sd": 0.06,
+        "min_dist": 0.01,
+        "prior_logit_bias_by_cond": {
+          "close": 0.0,
+          "far": 0.0,
+          "split": 0.0
+        },
+        "alpha_by_cond": {
+          "close": 2.0,
+          "far": 2.0,
+          "split": 2.0
+        },
+        "cost_per_char": 0.02,
+        "len_base_by_cond": {
+          "close": 42.0,
+          "far": 28.0,
+          "split": 34.0
+        },
+        "len_hard_coef": 18.0,
+        "len_min": 5,
+        "len_mean_for_sem": 35.0,
+        "verb_scale": 8.0,
+        "sem_base_sigma": 0.18,
+        "sem_len_coef": 1.4,
+        "sem_sigma_min": 0.03,
+        "proto_noise_base": 0.08,
+        "proto_noise_hard_coef": 0.9,
+        "worker_skill_sd": 0.6,
+        "worker_verb_sd": 0.4,
+        "worker_alpha_sd": 0.2,
+        "n_candidates_by_cond": {
+          "close": 15,
+          "far": 15,
+          "split": 15
+        },
+        "candidate_quality_mult_by_cond": {
+          "close": 1.0,
+          "far": 1.0,
+          "split": 1.0
+        },
+        "sem_len_coef_by_cond": null,
+        "ceiling_gamma_by_cond": {
+          "close": 1.0,
+          "far": 1.0,
+          "split": 1.0
+        },
+        "confound_conditions_by_worker": false,
+        "cond_logit_skill_coef": 0.0,
+        "cond_logit_verb_coef": 0.0,
+        "cond_base_logits": {
+          "close": -1.0216512475292037,
+          "far": -1.1711829814997194,
+          "split": -1.1086626245185809
+        },
+        "check_a5_identity": true,
+        "check_n": 150
+      },
+      "files": {
+        "condition_success_fig": "regime1_uniform_prior_alpha_equal_condition_success.png",
+        "rejection_rates_fig": "regime1_uniform_prior_alpha_equal_rejection_rates.png",
+        "wald_stats_example_test_fig": "regime1_uniform_prior_alpha_equal_wald_stats_example_test.png",
+        "reject_summary_csv": "regime1_uniform_prior_alpha_equal_reject_summary.csv",
+        "reject_raw_csv": "regime1_uniform_prior_alpha_equal_reject_raw.csv",
+        "a2_confusion_matrix_csv": "regime1_uniform_prior_alpha_equal_a2_confusion_matrix.csv"
+      },
+      "one_run": {
+        "n_total": 20000,
+        "n_train": 16025,
+        "n_test": 3975,
+        "workers_total": 600,
+        "workers_train": 480,
+        "workers_test": 120
+      }
+    },
+    {
+      "name": "regime2_prior_shift_alpha_equal",
+      "config": {
+        "seed": 0,
+        "n_trials": 20000,
+        "n_workers": 600,
+        "test_frac_workers": 0.2,
+        "n_candidates": 15,
+        "cond_probs": {
+          "close": 0.36,
+          "far": 0.31,
+          "split": 0.33
+        },
+        "close_mu": 0.12,
+        "close_sd": 0.04,
+        "far_mu": 0.35,
+        "far_sd": 0.06,
+        "min_dist": 0.01,
+        "prior_logit_bias_by_cond": {
+          "close": 0.0,
+          "far": 0.9,
+          "split": 0.2
+        },
+        "alpha_by_cond": {
+          "close": 2.0,
+          "far": 2.0,
+          "split": 2.0
+        },
+        "cost_per_char": 0.02,
+        "len_base_by_cond": {
+          "close": 42.0,
+          "far": 28.0,
+          "split": 34.0
+        },
+        "len_hard_coef": 18.0,
+        "len_min": 5,
+        "len_mean_for_sem": 35.0,
+        "verb_scale": 8.0,
+        "sem_base_sigma": 0.18,
+        "sem_len_coef": 1.4,
+        "sem_sigma_min": 0.03,
+        "proto_noise_base": 0.08,
+        "proto_noise_hard_coef": 0.9,
+        "worker_skill_sd": 0.6,
+        "worker_verb_sd": 0.4,
+        "worker_alpha_sd": 0.2,
+        "n_candidates_by_cond": {
+          "close": 15,
+          "far": 15,
+          "split": 15
+        },
+        "candidate_quality_mult_by_cond": {
+          "close": 1.0,
+          "far": 1.0,
+          "split": 1.0
+        },
+        "sem_len_coef_by_cond": null,
+        "ceiling_gamma_by_cond": {
+          "close": 1.0,
+          "far": 1.0,
+          "split": 1.0
+        },
+        "confound_conditions_by_worker": false,
+        "cond_logit_skill_coef": 0.0,
+        "cond_logit_verb_coef": 0.0,
+        "cond_base_logits": {
+          "close": -1.0216512475292037,
+          "far": -1.1711829814997194,
+          "split": -1.1086626245185809
+        },
+        "check_a5_identity": true,
+        "check_n": 150
+      },
+      "files": {
+        "condition_success_fig": "regime2_prior_shift_alpha_equal_condition_success.png",
+        "rejection_rates_fig": "regime2_prior_shift_alpha_equal_rejection_rates.png",
+        "wald_stats_example_test_fig": "regime2_prior_shift_alpha_equal_wald_stats_example_test.png",
+        "reject_summary_csv": "regime2_prior_shift_alpha_equal_reject_summary.csv",
+        "reject_raw_csv": "regime2_prior_shift_alpha_equal_reject_raw.csv",
+        "a2_confusion_matrix_csv": "regime2_prior_shift_alpha_equal_a2_confusion_matrix.csv"
+      },
+      "one_run": {
+        "n_total": 20000,
+        "n_train": 16025,
+        "n_test": 3975,
+        "workers_total": 600,
+        "workers_train": 480,
+        "workers_test": 120
+      }
+    },
+    {
+      "name": "regime3_prior_shift_alpha_hetero",
+      "config": {
+        "seed": 0,
+        "n_trials": 20000,
+        "n_workers": 600,
+        "test_frac_workers": 0.2,
+        "n_candidates": 15,
+        "cond_probs": {
+          "close": 0.36,
+          "far": 0.31,
+          "split": 0.33
+        },
+        "close_mu": 0.12,
+        "close_sd": 0.04,
+        "far_mu": 0.35,
+        "far_sd": 0.06,
+        "min_dist": 0.01,
+        "prior_logit_bias_by_cond": {
+          "close": 0.0,
+          "far": 0.9,
+          "split": 0.2
+        },
+        "alpha_by_cond": {
+          "close": 1.2,
+          "far": 0.8,
+          "split": 2.6
+        },
+        "cost_per_char": 0.02,
+        "len_base_by_cond": {
+          "close": 42.0,
+          "far": 28.0,
+          "split": 34.0
+        },
+        "len_hard_coef": 18.0,
+        "len_min": 5,
+        "len_mean_for_sem": 35.0,
+        "verb_scale": 8.0,
+        "sem_base_sigma": 0.18,
+        "sem_len_coef": 1.4,
+        "sem_sigma_min": 0.03,
+        "proto_noise_base": 0.08,
+        "proto_noise_hard_coef": 0.9,
+        "worker_skill_sd": 0.6,
+        "worker_verb_sd": 0.4,
+        "worker_alpha_sd": 0.2,
+        "n_candidates_by_cond": {
+          "close": 15,
+          "far": 15,
+          "split": 15
+        },
+        "candidate_quality_mult_by_cond": {
+          "close": 1.0,
+          "far": 1.0,
+          "split": 1.0
+        },
+        "sem_len_coef_by_cond": null,
+        "ceiling_gamma_by_cond": {
+          "close": 1.0,
+          "far": 1.0,
+          "split": 1.0
+        },
+        "confound_conditions_by_worker": false,
+        "cond_logit_skill_coef": 0.0,
+        "cond_logit_verb_coef": 0.0,
+        "cond_base_logits": {
+          "close": -1.0216512475292037,
+          "far": -1.1711829814997194,
+          "split": -1.1086626245185809
+        },
+        "check_a5_identity": true,
+        "check_n": 150
+      },
+      "files": {
+        "condition_success_fig": "regime3_prior_shift_alpha_hetero_condition_success.png",
+        "rejection_rates_fig": "regime3_prior_shift_alpha_hetero_rejection_rates.png",
+        "wald_stats_example_test_fig": "regime3_prior_shift_alpha_hetero_wald_stats_example_test.png",
+        "reject_summary_csv": "regime3_prior_shift_alpha_hetero_reject_summary.csv",
+        "reject_raw_csv": "regime3_prior_shift_alpha_hetero_reject_raw.csv",
+        "a2_confusion_matrix_csv": "regime3_prior_shift_alpha_hetero_a2_confusion_matrix.csv"
+      },
+      "one_run": {
+        "n_total": 20000,
+        "n_train": 16025,
+        "n_test": 3975,
+        "workers_total": 600,
+        "workers_train": 480,
+        "workers_test": 120
+      }
+    },
+    {
+      "name": "regime4_uniform_prior_alpha_equal_len_cost_only",
+      "config": {
+        "seed": 0,
+        "n_trials": 20000,
+        "n_workers": 600,
+        "test_frac_workers": 0.2,
+        "n_candidates": 15,
+        "cond_probs": {
+          "close": 0.36,
+          "far": 0.31,
+          "split": 0.33
+        },
+        "close_mu": 0.12,
+        "close_sd": 0.04,
+        "far_mu": 0.35,
+        "far_sd": 0.06,
+        "min_dist": 0.01,
+        "prior_logit_bias_by_cond": {
+          "close": 0.0,
+          "far": 0.0,
+          "split": 0.0
+        },
+        "alpha_by_cond": {
+          "close": 2.0,
+          "far": 2.0,
+          "split": 2.0
+        },
+        "cost_per_char": 0.02,
+        "len_base_by_cond": {
+          "close": 42.0,
+          "far": 28.0,
+          "split": 34.0
+        },
+        "len_hard_coef": 18.0,
+        "len_min": 5,
+        "len_mean_for_sem": 35.0,
+        "verb_scale": 8.0,
+        "sem_base_sigma": 0.18,
+        "sem_len_coef": 0.0,
+        "sem_sigma_min": 0.03,
+        "proto_noise_base": 0.08,
+        "proto_noise_hard_coef": 0.9,
+        "worker_skill_sd": 0.6,
+        "worker_verb_sd": 0.4,
+        "worker_alpha_sd": 0.2,
+        "n_candidates_by_cond": {
+          "close": 15,
+          "far": 15,
+          "split": 15
+        },
+        "candidate_quality_mult_by_cond": {
+          "close": 1.0,
+          "far": 1.0,
+          "split": 1.0
+        },
+        "sem_len_coef_by_cond": null,
+        "ceiling_gamma_by_cond": {
+          "close": 1.0,
+          "far": 1.0,
+          "split": 1.0
+        },
+        "confound_conditions_by_worker": false,
+        "cond_logit_skill_coef": 0.0,
+        "cond_logit_verb_coef": 0.0,
+        "cond_base_logits": {
+          "close": -1.0216512475292037,
+          "far": -1.1711829814997194,
+          "split": -1.1086626245185809
+        },
+        "check_a5_identity": true,
+        "check_n": 150
+      },
+      "files": {
+        "condition_success_fig": "regime4_uniform_prior_alpha_equal_len_cost_only_condition_success.png",
+        "rejection_rates_fig": "regime4_uniform_prior_alpha_equal_len_cost_only_rejection_rates.png",
+        "wald_stats_example_test_fig": "regime4_uniform_prior_alpha_equal_len_cost_only_wald_stats_example_test.png",
+        "reject_summary_csv": "regime4_uniform_prior_alpha_equal_len_cost_only_reject_summary.csv",
+        "reject_raw_csv": "regime4_uniform_prior_alpha_equal_len_cost_only_reject_raw.csv",
+        "a2_confusion_matrix_csv": "regime4_uniform_prior_alpha_equal_len_cost_only_a2_confusion_matrix.csv"
+      },
+      "one_run": {
+        "n_total": 20000,
+        "n_train": 16025,
+        "n_test": 3975,
+        "workers_total": 600,
+        "workers_train": 480,
+        "workers_test": 120
+      }
+    }
+  ],
+  "combined_summary": "all_regimes_reject_summary.csv",
+  "reproducibility_files": {
+    "pip_freeze": "pip_freeze.txt",
+    "environment": "environment.json",
+    "run_manifest": "run_manifest.json"
+  },
+  "notes": {
+    "figures": {
+      "grayscale": true,
+      "dpi": 1200,
+      "titles": "none",
+      "error_bars": "Wilson 95% intervals where applicable"
+    }
+  }
+}

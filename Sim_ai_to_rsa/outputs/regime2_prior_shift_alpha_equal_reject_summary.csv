@@ -1,0 +1,13 @@
+split,block,reject_rate,mean_stat,median_p,n,regime
+test,A2_outcome_clarity,0.2,3.802897432657094,0.3481751145336964,20,regime2_prior_shift_alpha_equal
+test,A2_outcome_disc,0.0,2.8506045802584774,0.26667902522828624,20,regime2_prior_shift_alpha_equal
+test,A2_outcome_full,1.0,49.34787348464326,8.069491630458003e-09,20,regime2_prior_shift_alpha_equal
+test,A2_outcome_len,0.95,16.71209793785337,0.0007455996663763287,20,regime2_prior_shift_alpha_equal
+test,A5_outcome_base,0.2,3.6818761757095593,0.28123092386030846,20,regime2_prior_shift_alpha_equal
+test,A5_outcome|A2_outcome_full,0.7,9.248188523072422,0.007539578960086668,20,regime2_prior_shift_alpha_equal
+train,A2_outcome_clarity,0.85,14.556723847714782,0.0007881357386077537,20,regime2_prior_shift_alpha_equal
+train,A2_outcome_disc,0.5,9.36451360694803,0.03577018956986899,20,regime2_prior_shift_alpha_equal
+train,A2_outcome_full,1.0,187.45636522755132,0.0,20,regime2_prior_shift_alpha_equal
+train,A2_outcome_len,1.0,59.70886789452688,4.773403894375861e-13,20,regime2_prior_shift_alpha_equal
+train,A5_outcome_base,0.8,11.38862616399537,0.005285152012311611,20,regime2_prior_shift_alpha_equal
+train,A5_outcome|A2_outcome_full,1.0,42.13459941981808,2.4752863647670154e-09,20,regime2_prior_shift_alpha_equal
